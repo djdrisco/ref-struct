@@ -6,15 +6,16 @@
 , "repository": { "type": "git", "url": "git://github.com/TooTallNate/ref-struct.git" }
 , "main": "./lib/struct.js"
 , "scripts": {
-      "test": "node-gyp rebuild --directory test && mocha -gc --reporter spec"
-  }
+  "test": "node-gyp rebuild --directory test && mocha -gc --reporter spec"
+}
 , "dependencies": {
-      "debug": "*"
-    , "ref": "0"
-  }
+  "debug": "~0.8.0"
+, "ref": "git+https://github.com/djdrisco/ref.git#just0.2.0"
+}
 , "devDependencies": {
-      "mocha": "*"
-    , "ref-array": "*"
-  }
+  "mocha": "^2.2.5"
+, "ref-array": "git+https://github.com/djdrisco/ref-array.git#justv1.1.0"
+}
 , "engines": { "node": "*" }
 }
+
